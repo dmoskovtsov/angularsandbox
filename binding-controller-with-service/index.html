@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<div ng-app="app">
+    <div ng-controller="TaskCtrl">
+        "Task module" {{model.tasks}}
+        <button ng-click="loadTasks()">Load tasks from Task</button>
+    </div>
+
+    <div ng-controller="AdminCtrl">
+        "Admin module" {{model.tasks}}
+        <button ng-click="loadTasks()">Load tasks from Admin</button>
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+<script type="text/javascript"
+        src="main.js"></script>
+</body>
+</html>
